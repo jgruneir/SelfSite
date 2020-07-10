@@ -1,17 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+<b-container id="app">
+      <Header/>
+      <Summary/>
+      <Education/>
+      <Skills/>
+      <Experience/>
+      <span id="copyright"><b>&copy; 2020 Jared Gruneiro</b></span>
+</b-container>
 </template>
 
 <script lang="ts">
+
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Header from './components/Header.vue';
+import Summary from './components/Summary.vue';
+import Education from './components/Education.vue';
+import Skills from './components/Skills.vue';
+import Experience from './components/Experience.vue';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import VueMq from 'vue-mq';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+Vue.use(BootstrapVue)
+Vue.use(VueMq, {
+  breakpoints: {
+    mobile: 576,
+    bigMobile: 768,
+    tablet: 992,
+    desktop: Infinity,
+  }
+})
 
 @Component({
   components: {
-    HelloWorld,
+    Header,
+    Skills,
+    Summary,
+    Education,
+    Experience
   },
 })
 export default class App extends Vue {}
@@ -19,11 +46,25 @@ export default class App extends Vue {}
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color:white;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom:75px;
+  max-width: 1000px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 15px;
 }
+
+#copyright {
+  margin: 8px;
+}
+
+body {
+  background-color: rgb(7, 5, 39);
+}
+
 </style>

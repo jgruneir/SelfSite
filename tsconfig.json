@@ -31,7 +31,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx", "node_modules/vue-mq/dist/vue-mq.d.ts"
   ],
   "exclude": [
     "node_modules"
