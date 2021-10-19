@@ -29,6 +29,9 @@ export default new Vuex.Store({
             {name: "SQL"}
         ], 
         tools: [
+            {name: "Azure"},
+            {name: "Kubernetes"},
+            {name: "AWS"},
             {name: "Jenkins"},
             {name: "Docker"},
             {name: "OpenShift"},
@@ -39,7 +42,6 @@ export default new Vuex.Store({
             {name: "Postman"},
             {name: "SQL Developer"},
             {name: "MongoDB"},
-            {name: "Firebase"},
             {name: "Kafka"},
         ],
         workExperience: [
@@ -47,7 +49,8 @@ export default new Vuex.Store({
                 "Supported a high-profile healthcare claims processing system by developing in Java, enhancing functionality of a system that handles millions of claims per day through features that would allow for more information to be processed, enhancing the speed of approval and denial through United Healthcare",
                 "Worked within a mature enterprise application requiring compliance with unit test coverage, Sonar quality gates, and application security, and gained an understanding of how to work in a large project with dozens of developers",
                 "Developed and integrated a new workflow using OpenShift and Kafka by which claims that met certain criteria would be automatically held from processing and messages instantly sent to the submitting provider alerting them to errors that needed correcting, potentially saving patients from delays in seeing their claim processed",
-                "Utilized downtime for self-driven projects utilizing other technologies such as Python and Bash to create various tools that enhanced development within our project space, and shared these with team members to raise productivity"
+                "Utilized downtime for self-driven projects utilizing other technologies such as Python and Bash to create various tools that enhanced development within our project space, and shared these with team members to raise productivity",
+                "Created a microservice hosted in Azure as part of an initiative to break up a monolithic legacy application into smaller, modern components which are easier to update and maintain"
             ]},
             {title: "Associate Software Engineer", dates: "June 2018 - June 2019", details: [
                 "Developed a proof of concept web application using React and Node.js to enable implementation managers to test health care policies in production, creating a huge reduction in go-live-date issues with some of our biggest clients",
